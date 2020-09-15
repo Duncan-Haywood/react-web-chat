@@ -8,7 +8,7 @@ export default function Header() {
                 <Avatar src="http://icons.iconarchive.com/icons/diversity-avatars/avatars/1024/robot-03-icon.png" />
             </div>
             <div style={{ width: '80vw' }}>
-                <span className="ps-bot-name">Botinho</span>
+                <span className="ps-bot-name">Ami, your friend</span>
             </div>
             <div style={{ width: '10vw' }}>
                 <Button className="ps-transparent-button ps-footer-button" icon="more"></Button>

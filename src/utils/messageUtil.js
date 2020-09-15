@@ -1,7 +1,7 @@
 import nanoid from 'nanoid';
 import {NLU} from '../config/nluSettings';
 import {watsonToChat, chatToWatson} from './watson';
-
+import {chatToLifeCoach, lifeCoachToChat} from './lifeCoachStatic'
 export function normalizeMessage(text) {
     return [{
         from: 'me',
@@ -31,6 +31,12 @@ export function convertBasedOnNlu (message, from) {
                 return chatToWatson(message)
             }else{
                 return watsonToChat(message)
+            }
+        case 'LIFE_COACH_QUESTIONS': 
+            if(from === 'me'){
+                return chatToLifeCoach(message)
+            }else{
+                return lifeCoachToChat(message)
             }
         default:
         break;

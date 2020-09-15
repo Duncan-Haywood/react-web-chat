@@ -12,7 +12,7 @@ export const Types = {
 
 // Reducer
 const initialState = {
-    conversation: MockMessages, //change this to a empty array []
+    conversation: [], 
     context: {},
     errorOnSendMessage: null
 };

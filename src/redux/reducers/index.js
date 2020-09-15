@@ -8,5 +8,5 @@ export const Reducers = (history) => combineReducers({
     router: connectRouter(history),
     messageReducer: messageReducer,
     uiReducer: uiReducer,
-    authReducer:authReducer
+    authReducer: authReducer
 });
