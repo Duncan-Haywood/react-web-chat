@@ -4,10 +4,21 @@ import Api from './Api';
 ********* MVP PRODUCT ******
 */
 export async function fetchMessage(message) {  
-	const RESPONSES = [
-	'THIS IS WORKING STATICALLY'
+	/*
+    input: 
+    {
+        context: message[0].context,
+        input: {
+            text: message[0].message
+        }
+
+    output:
+    */
+    const RESPONSES = [
+	{context: "undefined", text: 'THIS IS WORKING STATICALLY'}
 	];
-	return RESPONSES[0];
+    let response = RESPONSES[0];
+	return response
 }	
 
 /*

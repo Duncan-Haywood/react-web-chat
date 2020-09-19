@@ -2,13 +2,13 @@ import nanoid from 'nanoid';
 
 //This normalize is from Watson Assistant Version >= 2019-02-01
 export function lifeCoachToChat(response) {
-	return {
+	return [{
 		from: 'bot',
 		type: 'text',
-		message: response.output.generic.msg.text,
+		message: response.text,
 		sentAt: new Date(),
 		id: nanoid()	
-	}
+	}]
 }
 
 export function chatToLifeCoach(message) {
