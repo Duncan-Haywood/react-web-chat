@@ -2,7 +2,7 @@ import { fetchMessage } from '../../api/nlu';
 import {addContext, convertBasedOnNlu, normalizeMessage} from '../../utils/messageUtil';
 import {messageInputDisabled, botTyping} from './uiReducer';
 import MockMessages from '../../utils/MockMessages';
-
+import {INTRO_MESSAGE} from '../../utils/lifeCoachStatic.js'
 // Action Types
 export const Types = {
     ADD_MESSAGE: 'ADD_MESSAGE',
@@ -12,7 +12,7 @@ export const Types = {
 
 // Reducer
 const initialState = {
-    conversation: [], 
+    conversation: INTRO_MESSAGE, //clear this to clear starting state; of type list.
     context: {},
     errorOnSendMessage: null
 };
