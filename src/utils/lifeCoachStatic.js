@@ -122,6 +122,11 @@ export function getRandomQuestion(){
 /*
 the last of the below is the introductory message shown.
 */
-export const INTRO_TEXT = "Welcome! I feel blessed to meet you. Thank you so much for joining me! <3 My name is Ami which is French for \"friend\". Whatever answers you come up with are completely valid, and I'm grateful to you for anything you would like to share. I'm really looking forward to getting to know you better. :)"
-export const INTRO_RESPONSE = {...RESPONSE_FORM, text: INTRO_TEXT}
-export const INTRO_MESSAGE = lifeCoachToChat( INTRO_RESPONSE )
+export const INTRO_SITE_TEXT = "Hello! Here is a protype UI for a conversational AI. What's here is a first go with some static journalling questions which I put together. If you have any suggestions of what you would like for this to become for your own personal use, I would love to recieve your feedback; I'm building this for you and people like you. I welcome you to play around, and I hope you have a beautiful day! Best, Duncan Haywood: +1 978-476-0873"
+export const INTRO_BOT_TEXT = "Welcome! I feel blessed to meet you. Thank you so much for joining me! <3 My name is Ami which is French for \"friend\". Whatever answers you come up with are completely valid, and I'm grateful to you for anything you would like to share. I'm really looking forward to getting to know you better. :)"
+export const INTRO_BOT_RESPONSE = {...RESPONSE_FORM, text: INTRO_BOT_TEXT}
+export const INTRO_BOT_MESSAGE = lifeCoachToChat( INTRO_BOT_RESPONSE )
+
+export const INTRO_SITE_RESPONSE = {...RESPONSE_FORM, text: INTRO_SITE_TEXT}
+export const INTRO_SITE_MESSAGE = lifeCoachToChat( INTRO_SITE_RESPONSE )
+export const INTRO_MESSAGE = INTRO_SITE_MESSAGE.concat(INTRO_BOT_MESSAGE)
